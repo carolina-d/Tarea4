@@ -1,0 +1,492 @@
+/**
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body{
+
+	background-color: #E6E6E6;
+	margin: 0;
+    padding: 0;
+}
+.row{
+	 width: 960px;
+  	 margin: 0 auto;
+     padding:30px;
+     padding-bottom: 10px;
+
+
+}
+.header, footer{
+	background: #23282E;
+	color: #BDBDBD;
+	font-family: verdana;
+}
+.final{
+	font-size: 12px;
+	font-family: verdana;
+
+}
+.header-social{
+	 
+  	 margin: 0 auto;
+     padding-right: 270px;
+     padding-top: 5px;
+     background: #23282E;
+
+
+}
+.header-social ul{
+
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	float: right;
+
+}
+	.header-social ul li{
+		padding: 1px;
+        display: inline-block;/*ubica las imagenes una al lado de otra*/
+        	}
+
+	.header-social ul li img{
+
+		border-radius: 100%;
+		width: 80%;
+
+    }    
+
+.header-title{
+	margin-top: 30px;
+	color: #BDBDBD;
+	text-align: center;
+
+}
+	.header-image img{
+		border-radius: 50%;
+		float: left;
+	}
+	.header-title  h4 {
+		font-family: verdana;
+		list-style: none;
+	}
+
+	.header-title a {
+		font-family: verdana;
+		list-style: none;
+		color: #BDBDBD;
+	}
+
+.header-nav{
+	background: #23282E;
+
+     
+}
+.header-nav ul{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;/*quita los item*/
+	float: left;
+}
+	
+	.header-nav ul li{
+        display: inline-block;
+        padding-right: 15px;
+        text-decoration: none;
+		font-family: verdana ;
+		color: #BDBDBD;
+	}
+
+	.header-nav ul li a{
+		text-decoration: none;
+		font-family: verdana ;
+		color: #BDBDBD;
+	}
+/*nose por que no se corre 
+	.work  {
+		float: right;
+
+	}
+
+	.lala{
+		float: right;
+	}
+*/
+
+.search{
+	float: right;
+	margin-top: 5px;
+	margin-right: 150px;
+
+
+}
+	.search input{
+		
+		width: 180%;
+		padding: 3px;
+		border-radius: 5px;
+	}
+
+.buttons ul{
+	padding: 0px;
+	margin: 0px;
+	
+	list-style: none;/*quita los item*/
+	float: left;
+}
+
+	.buttons ul li{
+		margin: 5px;
+        display: inline-block;
+        font-family: verdana;
+        font-size: 12px;
+
+	}
+	.buttons ul li a{
+		text-decoration: none;
+        color: black;
+        background: #D8D8D8;
+        display: block;
+        padding: 5px;
+        border-radius: 10px;
+        
+
+	}
+
+	.buttons ul li a:hover, a:active {
+  		background: black;
+  		color: white;
+}
+    
+
+
+/*esto es para la imgen superior*/
+.three{
+
+	width: 310px;/*es el tamaño de las columnas*/
+	margin-right: 10px;/*espacio entre las columns*/
+
+}
+
+.columns{
+	float: left;
+}
+.text {
+
+	background-color: white;
+	font-style: bold;
+	border: 1px solid #BDBDBD;
+	font-family: verdana;
+	padding: 10px;
+	width: 288px;
+	margin-bottom: 2px;
+
+}
+
+	.text h2{
+		font-family: verdana;
+		font-style: bold;
+
+	}
+	.text p{
+
+		font-size: 14px;
+		margin-top: 5px;
+
+	}
+
+.six{
+
+	width: 48.5%;
+	margin-right: 2%;
+}
+.polaroid{
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #BDBDBD;
+
+}
+	.polaroid img{
+	width: 100%;
+}
+
+.omega{
+
+	float: right;
+}
+
+.numbers-page ul{
+	list-style: none;
+}
+
+	.numbers-page ul li{
+		display: inline-block;
+		margin:left;
+		margin-left: 5px;
+		padding: 5px;
+		border-radius: 100%;
+		background: #BDBDBD;
+		font-family: verdana;
+		font-size: 12px;
+	}
+
+
+/* intento de formulario 
+.hire{
+	background-color: #424242;
+	color: #BDBDBD;
+	font-family: verdana;
+	 	
+}
+
+
+    .hire-title{
+    	font-size: 28px;
+    	margin-bottom: 20px;
+    }
+
+    .hire-contect-left{
+       	float: left;
+      
+     }
+
+     .hire-contect h4{
+    	font-size: 16px;
+    	
+     }
+
+    .hire-contect p{
+    	font-family: verdana;
+    	font-size: 13px;
+    	width: 45%;
+       	margin-top: 10px;
+    	margin: left;
+    	text-align:left;
+    	line-height: 130%;
+    	
+    	
+
+    }
+
+
+    .contact{
+    	
+    	background-color: #424242;
+		color: #BDBDBD;
+		font-family: verdana;
+		text-align: right;
+    } 
+
+.skill {
+
+}
+
+.skill p {
+    	line-height: 200%;
+    	border-bottom: 1px solid #23282E;
+    	width: 460px;
+
+}*/
+
+.principal{
+	background: #2E2E2E;
+	font-family: verdana;
+	color: #D8D8D8;
+	padding-bottom: 30px;
+
+}
+
+.hiro h1{
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.hiro, .skill h3{
+	font-size: 16px;
+	margin-bottom: 10px;
+
+
+
+}
+.contenedor-left{
+	float: left;
+	width: 460px;
+	border-right: 1px solid #1C1C1C;
+	font-size: 12px;
+	line-height: 120%;
+	margin-top: 5px;
+
+	padding-right: 10px;
+
+}
+
+	.contenedor-left p{
+		margin-bottom: 10px;
+		width: 430px;
+	}
+
+.contenedor-right{
+	float: right;
+	width: 460px;
+	margin-top: -30px;
+}
+
+.contenedor-right h3{
+	text-align: left;
+	width: 460px;
+	font-size: 16px;
+	
+
+}
+
+.contenedor-right p{
+	text-align: left;
+	width: 460px;
+	font-size: 12px;
+	line-height: 150%;
+	margin-top: 15px;
+
+}
+.skill{
+	float: left;
+	width: 430px;
+	line-height: 200%;
+	color: #BDBDBD;
+
+
+}
+
+.skill ul{
+	list-style: none;
+	line-height: 120%;
+	width: 430px;
+	
+
+}
+
+.skill ul li {
+	border-bottom: 1px solid #1C1C1C;
+	line-height: 300%;
+
+	
+}
+
+
+/*estilo para los formularios*/
+/* estilos para los ul y li del formulario ---*/
+.contact_form ul {
+
+    width:400px;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+.contact_form li{
+
+    margin-top: 30px; 
+    position:relative;
+}
+
+
+.contact_form input {
+
+    height:20px; 
+    width:250px; 
+    font-size: 12px;
+    padding: 10px;
+    padding-right:30px;
+    background: #23282E;
+}
+
+/* creo otra clase para el formulario text sea
+ mas grande no se si hay otra forma*/
+.caja ul{
+
+	width:400px;
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+
+}
+
+.caja li{
+	margin-top: 30px; 
+    position:relative;
+    text-align: left;
+
+
+}
+
+.caja input{
+	height:20px; 
+    width:250px; 
+    font-size: 12px;
+    padding: 120px;
+    padding-right:30px;
+    background: #23282E;
+}
+
+
+.contact_form textarea {
+    width:300px;
+}
+
+/*-- ubicacion del boton-*/
+.contact_form button {
+    float: right;
+}
+
+
+
+.contact_form input, .contact_form textarea { 
+    border:1px solid #23282E;
+    border-radius:2px;
+    color: #888;
+    font-size: 12px;
+    padding-right:30px;
+    
+
+}
+
+
+button.submit {
+   padding: 5px 25px;
+   font-family: verdana;
+   font-weight: bold;
+   line-height: 20px;
+   color: #BDBDBD;
+   border: none; 
+   background-color: #424242;
+   border-radius: 10px;
+   
+}
+button.submit:hover {
+    opacity:.55;
+    cursor: pointer; 
+    color: #fff;
+}
